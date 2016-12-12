@@ -1,2 +1,8 @@
 # CCPE — Centre for Computational Protein Engineering.
 # @NPM — https://www.npmjs.com/~ccpe
+
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
