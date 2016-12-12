@@ -36,3 +36,6 @@
 // "disallowSemicolons": false
 // "requireSemicolons": true
 // "disallowAnonymousFunctions": true
+
+// global __dirname: true
+// global require: true
