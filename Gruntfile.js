@@ -29,3 +29,10 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+
+// "requireSpaceAfterLineComment": { "allExcept": ["#", "="] }
+// "disallowMultipleSpaces": {"allowEOLComments": true}
+// "disallowSemicolons": false
+// "requireSemicolons": true
+// "disallowAnonymousFunctions": true
