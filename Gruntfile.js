@@ -46,3 +46,7 @@
 
 // Invoking strict mode.
 "use strict";
+
+// To load required Node module.
+// -----------------------------
+var os         = require('os');
