@@ -80,3 +80,5 @@ var build = {
 // All Grunt Operations Defined... |------------------------------------------| 18/Dec/2016 | SEED™ — Skövde.
 //                           Copyright © 2016, Prabhat Kumar, All rights reserved.
 // ----------------------------------------------------------------------------------------------------------
+
+module.exports = function(grunt) {
