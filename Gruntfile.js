@@ -117,3 +117,6 @@ module.exports = function(grunt) {
   /// based on the name:
   /// \---------------- coffee.js => coffee{}
   grunt.util._.extend(config, loadConfig('./tasks/options/'));
+  
+  // Project configuration for -//Slappé®//- Build.
+  grunt.initConfig(config);
