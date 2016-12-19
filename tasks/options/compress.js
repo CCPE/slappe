@@ -28,3 +28,23 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  main: {
+    options: {
+      // output ——> ./slappe-data-2016-12-19.zip
+      archive   : '<%= pkg.name %>-data-<%= grunt.template.today("yyyy-mm-dd") %>.zip',
+      mode      : 'zip',
+      level     : 9,
+      pretty    : true
+    },
+    files: [
+      // Each of the files in the /data/ directory will be output to
+      // the /root/ directory each with the extension [.zip].
+      {
+        expand  : true,
+        src     : ['./lib/data/*.json']
+      }
+    ]
+  }
+};
