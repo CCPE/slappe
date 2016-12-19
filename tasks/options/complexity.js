@@ -28,3 +28,27 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  generic: {
+    src: [
+      // Slappé® script(s).
+      './index.js', './lib/**/*.js',
+      // Build script(s).
+      './Gruntfile.js', './tasks/**/*.js'
+    ],
+    exclude: ['./bin/*.js'],
+    options: {
+      breakOnErrors        : true,
+      jsLintXML            : './report/report.xml',     // create XML JSLint-like report.
+      checkstyleXML        : './report/checkstyle.xml', // create checkstyle report.
+      pmdXML               : './report/pmd.xml',        // create pmd report.
+      errorsOnly           : false,                     // show only maintainability errors.
+      cyclomatic           : [3, 9, 12],                // v(G) - or optionally a single value, like 3.
+      halstead             : [8, 14, 20],               // or optionally a single value, like 8.
+      maintainability      : 100,
+      hideComplexFunctions : false,                     // only display maintainability.
+      broadcast: false                                  // broadcast data over event-bus.
+    }
+  }
+};
