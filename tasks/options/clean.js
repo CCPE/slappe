@@ -28,3 +28,17 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  // 1. Before generating any new files, remove any previously-created files.
+  tests: ['tmp', '.temp', '*.temp', '*.log'],
+  // 2. Markdown files.
+  docs: ['*.knit.md', '*.utf8.md'],
+  release: {
+    options: {
+      'no-write': true
+    },
+    // 3. [core & lib] — directory contains all slappé script.
+    src: ['./core', './lib', './*.md']
+  }
+};
