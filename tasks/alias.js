@@ -103,3 +103,6 @@ module.exports = function(grunt) {
   
   // A task to clean build(s) or Temporary file(s) and default cache directories.
   grunt.registerTask('clean', ['clean']);
+  
+  // A task to build JavaScript and TypeScript.
+  grunt.registerTask('build', ['coffee', 'typescript']);
