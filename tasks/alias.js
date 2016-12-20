@@ -100,3 +100,6 @@ module.exports = function(grunt) {
   grunt.registerTask('help', 'To get help about the Build System.', function(){
     return usage.call(this, grunt);
   });
+  
+  // A task to clean build(s) or Temporary file(s) and default cache directories.
+  grunt.registerTask('clean', ['clean']);
