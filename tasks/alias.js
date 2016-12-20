@@ -45,3 +45,26 @@ module.exports = function(grunt) {
   var seed     = JSON.parse(fs.readFileSync('./seed.json', {
     encoding: "utf8"
   }));
+  
+  // About Build System License and Information.
+  function about() {
+    var license = [
+      '/*!                                                                                                             ',
+      ' * Build System — ' + chalk.green(seed.system) + ': ' + chalk.blue(seed.name) + ': ' + chalk.blue(seed.version)  ,
+      ' * ' + chalk.cyan(seed.audience)                                                                                 ,
+      ' * ---------------------------------------------------------------------------------                            ',
+      ' * Copyright © 2015 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.             ',
+      ' * Available via the Apache License, version 2.0. [http://www.apache.org/licenses/]                             ',
+      ' * See: http://seed.sequomics.com/ — for details.                                                               ',
+      ' * ---------------------------------------------------------------------------------                            ',
+      ' * You are running O/S type —— ' + os.type() + ' and architecture is —— ' + os.arch()                            ,
+      ' * ---------------------------------------------------------------------------------                            ',
+      ' */                                                                                                             ',
+      '\n',
+    ].map(function(s) {
+      return s.replace(/\s+$/, '');
+    }).join("\n");
+    
+    // Printing about SEED™.
+    grunt.log.writeln(license);
+  }
