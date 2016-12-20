@@ -116,3 +116,5 @@ module.exports = function(grunt) {
   // A task for Slappé® Release.
   // Note: Run all before this task.
   grunt.registerTask('release', ['concat', 'compress', 'copy']);
+  // Last Update: 20-12-2016 — 09:59:04 PM.
+};
