@@ -28,3 +28,19 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  base: {
+    src: [
+      './core/type/*.ts',
+      './core/type/**/*.ts'
+    ],
+    dest          : './lib/util/',
+    options: {
+      module      : 'amd', // or commonjs.
+      target      : 'es5', // or es3.
+      sourceMap   : true,
+      declaration : true
+    }
+  }
+};
