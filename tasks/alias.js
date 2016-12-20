@@ -68,3 +68,25 @@ module.exports = function(grunt) {
     // Printing about SEED™.
     grunt.log.writeln(license);
   }
+  
+  // About Build System Usage.
+  function usage() {
+    var help = [
+      '/*!                                                                                                             ',
+      ' * Build System — ' + chalk.green(seed.system) + ': ' + chalk.blue(seed.name)                                    ,
+      ' * Usage: ————————————————————————————————————————————————————————————————                                      ',
+      ' * 1. To clean   —— grunt clean    - remove any previously-created files.                                       ',
+      ' * 2. To build   —— grunt build    - build all coffee and type script(s).                                       ',
+      ' * 3. To lint    —— grunt lint     - lint all coffee and type script(s).                                        ',
+      ' * 4. To test    —— grunt test     - Complexity Testing.                                                        ',
+      ' * 5. To release —— grunt release  - release the ' + chalk.green("Slappé®")                                      ,
+      ' * 6. Grunt Version —— ' + chalk.green(grunt.version)                                                            ,
+      ' */                                                                                                             ',
+      '\n',
+    ].map(function(s) {
+      return s.replace(/\s+$/, '');
+    }).join("\n");
+    
+    // Printing about SEED™ — Help.
+    grunt.log.writeln(help);
+  }
