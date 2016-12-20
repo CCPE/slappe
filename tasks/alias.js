@@ -33,3 +33,9 @@ module.exports = function(grunt) {
   
   // Invoking strict mode.
   "use strict";
+  
+  // To load required Node and NPM module.
+  // -------------------------------------
+  var os       = require('os');
+  var fs       = require('fs');
+  var chalk    = require('chalk');
