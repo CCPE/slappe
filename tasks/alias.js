@@ -112,3 +112,7 @@ module.exports = function(grunt) {
   
   // A task for Complexity Testing.
   grunt.registerTask('test', ['complexity']);
+  
+  // A task for Slappé® Release.
+  // Note: Run all before this task.
+  grunt.registerTask('release', ['concat', 'compress', 'copy']);
