@@ -39,3 +39,9 @@ module.exports = function(grunt) {
   var os       = require('os');
   var fs       = require('fs');
   var chalk    = require('chalk');
+  
+  // To get build system(s) information.
+  ///-----------------------------------
+  var seed     = JSON.parse(fs.readFileSync('./seed.json', {
+    encoding: "utf8"
+  }));
