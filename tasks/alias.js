@@ -30,3 +30,6 @@
  */
 
 module.exports = function(grunt) {
+  
+  // Invoking strict mode.
+  "use strict";
