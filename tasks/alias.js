@@ -90,3 +90,8 @@ module.exports = function(grunt) {
     // Printing about SEED™ — Help.
     grunt.log.writeln(help);
   }
+  
+  // A About Task of SEED™.
+  grunt.registerTask('about', 'To know about the Build System.', function(){
+    return about.call(this, grunt);
+  });
