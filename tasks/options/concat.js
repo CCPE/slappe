@@ -28,3 +28,17 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  options: {
+    stripBanners: true,
+    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' + '<%= grunt.template.today("yyyy-mm-dd") %> */',
+  },
+  dist: {
+    src: [
+      './lib/<%= pkg.name %>.js',
+      './lib/module/*.js'
+    ],
+    dest: './build/<%= pkg.name %>.built.js'
+  }
+};
