@@ -109,3 +109,6 @@ module.exports = function(grunt) {
   
   // A task to lint JavaScript, TypeScript and Build System - itself.
   grunt.registerTask('lint', ['jshint', 'tslint']);
+  
+  // A task for Complexity Testing.
+  grunt.registerTask('test', ['complexity']);
