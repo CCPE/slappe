@@ -106,3 +106,6 @@ module.exports = function(grunt) {
   
   // A task to build JavaScript and TypeScript.
   grunt.registerTask('build', ['coffee', 'typescript']);
+  
+  // A task to lint JavaScript, TypeScript and Build System - itself.
+  grunt.registerTask('lint', ['jshint', 'tslint']);
