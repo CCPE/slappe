@@ -28,3 +28,22 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  main: {
+    expand  : true,
+    nonull  : true,
+    src     : './lib/**',
+    dest    : './build/',
+    files   : [
+      // makes all src relative to cwd.
+      {
+        expand  : true,
+        cwd     : './',
+        src     : ['**'],
+        dest    : './build/',
+        filter  : 'isFile'
+      }
+    ]
+  }
+};
