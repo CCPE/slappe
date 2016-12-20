@@ -28,3 +28,29 @@
  * --/The Heart of Build System/-- of "Slappé®".
  * ___________________________________________________________________________
  */
+
+module.exports = {
+  options: {
+    boss   : true,
+    curly  : true,
+    eqeqeq : true,
+    eqnull : true,
+    node   : true,
+    undef  : true
+  },
+  all: [
+    './index.js',
+    '.lib/**/*.js',
+    './Gruntfile.js',
+    './tasks/**/*.js'
+  ],
+  with_overrides: {
+    options: {
+      noarg  : true,
+      unused : true
+    },
+    files: {
+      src: ['./lib/module/version.js']
+    }
+  }
+};
