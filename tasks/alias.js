@@ -95,3 +95,8 @@ module.exports = function(grunt) {
   grunt.registerTask('about', 'To know about the Build System.', function(){
     return about.call(this, grunt);
   });
+  
+  // A Help Task of SEED™.
+  grunt.registerTask('help', 'To get help about the Build System.', function(){
+    return usage.call(this, grunt);
+  });
